@@ -1,0 +1,46 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    &__item:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
+
+
+.btns {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color: var(--team-background-color);
+  cursor: pointer;
+
+  border-radius: 4px;
+
+  transition: background-color var(--trancition-timing),
+    color var(--trancition-timing), box-shadow var(--trancition-timing);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+    color: var(--main-background-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

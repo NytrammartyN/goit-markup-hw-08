@@ -1,0 +1,28 @@
+.header-logo {
+  font-family: var(--secondary-fonts);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  color: var(--accent-text-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header-logo__accent {
+  font-family: var(--secondary-fonts);
+  color: var(--main-text-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer-logo {
+  font-family: var(--secondary-fonts);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: var(--accent-text-color);
+}
+.footer-logo__accent {
+  color: var(--main-background-color);
+  font-family: var(--secondary-fonts);
+  text-transform: capitalize;
+}

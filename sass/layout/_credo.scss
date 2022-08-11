@@ -1,0 +1,47 @@
+.credo {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.credo-list {
+  display: flex;
+}
+
+.credo-item:not(:last-child) {
+  margin-right: 30px;
+  max-width: 270px;
+}
+
+
+
+.credo__icon {
+  align-items: center;
+
+  &-fon {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: var(--team-background-color);
+  }
+}
+
+.credo__title {
+  font-size: 14px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.credo__text {
+  font-family: var(--main-font);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--other-text-color);
+}
