@@ -1,47 +1,72 @@
 .credo {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.credo-list {
-  display: flex;
-}
-
-.credo-item:not(:last-child) {
-  margin-right: 30px;
-  max-width: 270px;
-}
+  padding-top: 60px;
+  padding-bottom: 60px;
 
 
-
-.credo__icon {
-  align-items: center;
-
-  &-fon {
-    display: flex;
-    width: 270px;
-    height: 120px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    background-color: var(--team-background-color);
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
+.credo-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.credo-list {
+  justify-content: center;
+  grid-gap: 30px;
+}
+
+
+
+.credo__item {
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.credo__icon-fon {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  background-color: var(--team-background-color);
+}
+
+.credo__icon {
+  align-items: center;
+}
+
+
 .credo__title {
-  font-size: 14px;
-  font-family: var(--main-font);
-  font-weight: 700;
-  line-height: 1.14;
   margin-bottom: 10px;
-  letter-spacing: 0.03em;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
   text-transform: uppercase;
-  color: var(--main-text-color);
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .credo__text {
-  font-family: var(--main-font);
+  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--other-text-color);
 }

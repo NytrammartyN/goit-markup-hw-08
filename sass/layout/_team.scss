@@ -1,22 +1,36 @@
 .team {
   background: var(--team-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__title {
   font-family: var(--main-font);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
 }
 
 .team-list__item {
@@ -25,9 +39,22 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: 479px) {
+    width: 270px;
   }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+
 }
 
 .team-list__workers {

@@ -71,6 +71,51 @@
             >
           </li>
         </ul>
+        <button class="menu-open" data-menu-open>
+          <svg class="menu-burger" width="24" height="16">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu flex is-hidden" data-menu>
+        <div>
+          <button class="menu-close" data-menu-close>
+            <svg class="menu-close" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-list__item">
+              <a
+                class="mob-menu-list__link link mob-menu-list__link--current"
+                href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-menu-list__item">
+              <a class="mob-menu-list__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-menu-list__down">
+          <a class="mob-menu-list__tell link" href="tel:+380961111111">
+            +38 096 111 11 11</a
+          >
+          <a class="mob-menu-list__mail link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <ul class="mob-menu-list__social list">
+            <li class="mob-menu-list__social-item">Instagram</li>
+            <li class="mob-menu-list__social-item">Twitter</li>
+            <li class="mob-menu-list__social-item">Facebook</li>
+            <li class="mob-menu-list__social-item">LinkedIn</li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--Мain SECT-->
@@ -88,8 +133,8 @@
       <section class="credo">
         <div class="container">
           <h2 class="visually-hidden">credo</h2>
-          <ul class="credo-list list">
-            <li class="credo-item">
+          <ul class="credo-list credo-flex list">
+            <li class="credo__item">
               <div class="credo__icon-fon">
                 <svg class="credo__icon" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
@@ -176,10 +221,14 @@
           <ul class="team-list list">
             <li class="team-list__item">
               <img
+                class="photo thumb-team"
+                srcset="
+                  ./images/ИгорьДемьяненко.jpg    1x,
+                  ./images/ИгорьДемьяненко-2x.jpg 2x
+                "
                 src="images/ИгорьДемьяненко.jpg"
                 alt="Игорь Демьяненко 1"
-                width="270"
-                height="260"
+                width="450"
               />
 
               <div class="team-list__workers">
@@ -240,10 +289,14 @@
 
             <li class="team-list__item">
               <img
+                class="photo thumb-team"
+                srcset="
+                  ./images/ОльгаРепина.jpg    1x,
+                  ./images/ОльгаРепина-2x.jpg 2x
+                "
                 src="images/ОльгаРепина.jpg"
                 alt="Oльга Репина 2"
-                width="270"
-                height="260"
+                width="450"
               />
               <div class="team-list__workers">
                 <h3 class="team-list__name">Ольга Репина</h3>
@@ -302,10 +355,14 @@
             </li>
             <li class="team-list__item">
               <img
+                class="photo thumb-team"
+                srcset="
+                  ./images/НиколайТарасов.jpg    1x,
+                  ./images/НиколайТарасов-2x.jpg 2x
+                "
                 src="images/НиколайТарасов.jpg"
                 alt="Николай Тарасов 3"
-                width="270"
-                height="260"
+                width="450"
               />
 
               <div class="team-list__workers">
@@ -366,10 +423,14 @@
 
             <li class="team-list__item">
               <img
+                class="photo thumb-team"
+                srcset="
+                  ./images/МихаилЕрмаков.jpg    1x,
+                  ./images/МихаилЕрмаков-2x.jpg 2x
+                "
                 src="images/МихаилЕрмаков.jpg"
                 alt="Михаил Ермаков 4"
-                width="270"
-                height="260"
+                width="450"
               />
 
               <div class="team-list__workers">
@@ -434,7 +495,7 @@
       <section class="client">
         <div class="container">
           <h2 class="client__title">Постоянные клиенты</h2>
-          <ul class="client__list list">
+          <ul class="client__list client__list-cust list">
             <li class="client__item">
               <a class="client__link link" href="">
                 <svg class="client__icon" width="106" height="60">
@@ -489,101 +550,103 @@
     <!-- Footer section -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-contacts">
-          <a class="footer-logo link" lang="en" href="index.html"
-            >Web<span class="footer-logo__accent">Studio</span></a
-          >
-          <address class="footer-adress">
-            <ul class="footer-adress__list list">
-              <li class="footer-adress__location-item">
-                <a
-                  class="footer-adress__location-link link"
-                  href="https://bit.ly/3pXMvUd"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >г. Киев, пр-т. Леси Украинки, 26</a
-                >
+        <div class="footer-flex">
+          <div class="footer-contacts">
+            <a class="footer-logo link" lang="en" href="index.html"
+              >Web<span class="footer-logo__accent">Studio</span></a
+            >
+            <address class="footer-adress">
+              <ul class="footer-adress__list list">
+                <li class="footer-adress__location-item">
+                  <a
+                    class="footer-adress__location-link link"
+                    href="https://bit.ly/3pXMvUd"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >г. Киев, пр-т. Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-adress__mail-tel-item">
+                  <a
+                    class="footer-adress__mail-tel-link link"
+                    lang="en"
+                    href="mailto:info@devstudio.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-adress__mail-tel-item">
+                  <a
+                    class="footer-adress__mail-tel-item link"
+                    href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social">
+            <p class="footer-social__text">Присоединяйтесь</p>
+            <ul class="footer-social__list list">
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="">
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-adress__mail-tel-item">
-                <a
-                  class="footer-adress__mail-tel-link link"
-                  lang="en"
-                  href="mailto:info@devstudio.com"
-                  >info@example.com</a
-                >
+
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="">
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-adress__mail-tel-item">
-                <a
-                  class="footer-adress__mail-tel-item link"
-                  href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="">
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="">
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-social">
-          <p class="footer-social__text">Присоединяйтесь</p>
-          <ul class="footer-social__list list">
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="">
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
+          </div>
+
+          <!-- footer input -->
+
+          <div class="footer-input">
+            <p class="footer-input__title">Подпишитесь на рассылку</p>
+            <form class="footer-input__form">
+              <label
+                for="footer-e-mail"
+                class="footer-input__email-field"
+              ></label>
+              <input
+                type="email"
+                class="footer-input__email"
+                name="e-mail"
+                id="footer-e-mail"
+                placeholder="E-mail"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              />
+              <button type="submit" class="footer-input__button">
+                Подписаться
+                <svg class="footer-input__icon-send" width="24px" height="24px">
+                  <use href="./images/icons.svg#send"></use>
                 </svg>
-              </a>
-            </li>
-
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="">
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="">
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="">
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- footer input -->
-
-        <div class="footer-input">
-          <p class="footer-input__title">Подпишитесь на рассылку</p>
-          <form class="footer-input__form">
-            <label
-              for="footer-e-mail"
-              class="footer-input__email-field"
-            ></label>
-            <input
-              type="email"
-              class="footer-input__email"
-              name="e-mail"
-              id="footer-e-mail"
-              placeholder="E-mail"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              required
-            />
-            <button type="submit" class="footer-input__button">
-              Подписаться
-              <svg class="footer-input__icon-send" width="24px" height="24px">
-                <use href="./images/icons.svg#send"></use>
-              </svg>
-            </button>
-          </form>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
