@@ -22,7 +22,7 @@
 }
 
 .modal {
-  width: 528px;
+  width: 320px;
   height: 581px;
   background-color: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -31,10 +31,29 @@
   position: relative;
   transform: scale(1);
   transition: transform var(--trancition-timing);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .form {
   padding: 40px;
+
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .form-title {
@@ -138,9 +157,13 @@ textarea {
 }
 
 .form__field-chek {
-  padding-left: 14px;
-  margin-top: 20px;
+  padding-left: 0px;
+  margin-top: 25px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 14px;
+  }
 }
 
 .form__checkbox {
@@ -169,20 +192,37 @@ textarea {
 
 
 .policy-label {
+  // position: relative;
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 11px;
+  line-height: 1.14;
   color: var(--other-text-color);
+
+  @media screen and (max-width: 479px) {
+    font-size: 10px;
+    line-height: 1.11;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy-link {
-  margin-left: 4px;
+  margin-left: 3px;
   color: rgba(33, 150, 243, 1);
 
   &:hover,
   &:focus {
     color: var(--hover-color);
+  }
+
+  @media screen and (max-width: 479px) {
+    position: absolute;
+    top: 18px;
+    left: 21px;
   }
 }
 

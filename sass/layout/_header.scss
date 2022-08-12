@@ -134,13 +134,13 @@
   fill: currentColor;
 }
 
-// Mobil menu
+// Mobile menu
 
 .mob-menu {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: var(main-background-color);
+  background-color: var(--main-background-color);
   top: 0;
   right: 0;
   padding: 15px 10px 48px 40px;
@@ -192,6 +192,7 @@
   }
 }
 
+
 .mob-menu-list__item {
   &:not(:last-child) {
     margin-bottom: 32px;
@@ -199,7 +200,7 @@
 }
 
 .mob-menu-list__link {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
