@@ -1280,6 +1280,12 @@ textarea:hover, textarea:focus {
 
 .footer-adress {
   margin-top: 20px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-adress {
+    margin-bottom: 0;
+  }
 }
 
 .footer-adress__location-item {
@@ -1291,8 +1297,48 @@ textarea:hover, textarea:focus {
   letter-spacing: 0.03em;
   color: var(--main-background-color);
 }
-.footer-adress__location-item:not(:last-child) {
-  margin-bottom: 9px;
+@media screen and (max-width: 1199px) {
+  .footer-adress__location-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-adress__location-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-container {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__contacts {
+    margin-left: 76px;
+    margin-right: 165px;
+  }
 }
 
 .footer-adress__mail-tel-item {
@@ -1343,8 +1389,13 @@ textarea:hover, textarea:focus {
 }
 
 .footer-social {
-  margin-left: 70px;
-  width: 206px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-bottom: 0;
+    margin-left: 70px;
+  }
 }
 
 .footer-social__list {
@@ -1386,8 +1437,11 @@ textarea:hover, textarea:focus {
 }
 
 /* --------- footer input-------- */
-.footer-input {
-  margin-left: auto;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-input {
+    margin-right: auto;
+    width: 450px;
+  }
 }
 
 .footer-input__title {
@@ -1410,7 +1464,6 @@ textarea:hover, textarea:focus {
 }
 
 .footer-input__email {
-  width: 358px;
   height: 50px;
   font-style: normal;
   font-weight: 400;
@@ -1443,6 +1496,22 @@ textarea:hover, textarea:focus {
 }
 .footer-input__email::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 479px) {
+  .footer-input__email {
+    width: calc(100% - 30px);
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer-input__email {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-input__email {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-input__button {

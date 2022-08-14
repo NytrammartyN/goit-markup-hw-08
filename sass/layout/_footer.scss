@@ -4,8 +4,15 @@
   background: var(--hero-and-footer-bg-color);
 }
 
+
+
 .footer-adress {
   margin-top: 20px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-adress__location-item {
@@ -18,7 +25,35 @@
   color: var(--main-background-color);
 
   &:not(:last-child) {
-    margin-bottom: 9px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.footer-container {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__contacts {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 76px;
+    margin-right: 165px;
   }
 }
 
@@ -69,8 +104,12 @@
 }
 
 .footer-social {
-  margin-left: 70px;
-  width: 206px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-left: 70px;
+  }
 }
 
 .footer-social__list {
@@ -107,7 +146,10 @@
 /* --------- footer input-------- */
 
 .footer-input {
-  margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: auto;
+    width: 450px;
+  }
 }
 
 .footer-input__title {
@@ -126,7 +168,6 @@
 }
 
 .footer-input__email {
-  width: 358px;
   height: 50px;
   font-style: normal;
   font-weight: 400;
@@ -144,6 +185,20 @@
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
+
+  @media screen and (max-width: 479px) {
+    width: calc(100% - 30px);
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
+
 }
 
 .footer-input__button {
