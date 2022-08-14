@@ -453,11 +453,23 @@ textarea:hover, textarea:focus {
   text-transform: capitalize;
   color: var(--accent-text-color);
 }
+@media screen and (max-width: 1199px) {
+  .footer-logo {
+    display: block;
+    text-align: center;
+  }
+}
 
 .footer-logo__accent {
   color: var(--main-background-color);
   font-family: var(--secondary-fonts);
   text-transform: capitalize;
+}
+@media screen and (max-width: 1199px) {
+  .footer-logo__accent {
+    display: block;
+    text-align: center;
+  }
 }
 
 .header {
@@ -1566,7 +1578,6 @@ textarea:hover, textarea:focus {
 }
 
 .project-list__item {
-  margin: 15px;
   -webkit-transition: -webkit-transform var(--trancition-timing);
   transition: -webkit-transform var(--trancition-timing);
   transition: transform var(--trancition-timing);

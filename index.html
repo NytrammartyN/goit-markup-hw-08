@@ -129,7 +129,9 @@
           </button>
         </div>
       </section>
+
       <!--  credo -->
+
       <section class="credo">
         <div class="container">
           <h2 class="visually-hidden">credo</h2>
@@ -189,32 +191,49 @@
           </ul>
         </div>
       </section>
+
       <!--  direction  -->
+
       <section class="direction">
         <div class="container">
           <h2 class="direction__title">Чем мы занимаемся</h2>
           <ul class="direction-list list">
             <li class="direction-list__item">
-              <img src="images/img.jpg" alt="PC" width="370" height="294" />
+              <img
+                srcset="./images/credo/PC.jpg 1x, ./images/credo/PC-2x.jpg 2x"
+                src="./images/credo/PC.jpg"
+                alt="PC"
+                width="370"
+              />
               <p class="direction-list__text">Десктопные приложения</p>
             </li>
             <li class="direction-list__item">
               <img
-                src="images/img1.jpg"
+                srcset="
+                  ./images/credo/LAPTOP.jpg    1x,
+                  ./images/credo/LAPTOP-2x.jpg 2x
+                "
+                src="./images/credo/LAPTOP.jpg"
                 alt="LAPTOP"
                 width="370"
-                height="294"
               />
               <p class="direction-list__text">Мобильные приложения</p>
             </li>
             <li class="direction-list__item">
-              <img src="images/img2.jpg" alt="PAD" width="370" height="294" />
+              <img
+                srcset="./images/credo/PAD.jpg 1x, ./images/credo/PAD-2x.jpg 2x"
+                src="./images/credo/PAD.jpg"
+                alt="PAD"
+                width="370"
+              />
               <p class="direction-list__text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
       </section>
+
       <!--  team section  -->
+
       <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
@@ -226,7 +245,7 @@
                   ./images/ИгорьДемьяненко-2x.jpg 2x
                 "
                 src="images/ИгорьДемьяненко.jpg"
-                alt="Игорь Демьяненко 1"
+                alt="Product Designer"
                 width="450"
               />
 
@@ -294,7 +313,7 @@
                   ./images/ОльгаРепина-2x.jpg 2x
                 "
                 src="images/ОльгаРепина.jpg"
-                alt="Oльга Репина 2"
+                alt="Frontend Developer"
                 width="450"
               />
               <div class="team-list__workers">
@@ -359,7 +378,7 @@
                   ./images/НиколайТарасов-2x.jpg 2x
                 "
                 src="images/НиколайТарасов.jpg"
-                alt="Николай Тарасов 3"
+                alt="Marketing"
                 width="450"
               />
 
@@ -426,7 +445,7 @@
                   ./images/МихаилЕрмаков-2x.jpg 2x
                 "
                 src="images/МихаилЕрмаков.jpg"
-                alt="Михаил Ермаков 4"
+                alt="UI Designer"
                 width="450"
               />
 
@@ -488,7 +507,9 @@
           </ul>
         </div>
       </section>
+
       <!-- Clients -->
+
       <section class="client">
         <div class="container">
           <h2 class="client__title">Постоянные клиенты</h2>
@@ -545,8 +566,8 @@
       </section>
     </main>
     <!-- Footer section -->
-    <!-- <footer class="footer">
-      <div class="container">
+    <footer class="footer">
+      <div class="container footer-container">
         <div class="footer-contacts">
           <a class="footer-logo link" lang="en" href="index.html"
             >Web<span class="footer-logo__accent">Studio</span></a
@@ -615,11 +636,11 @@
               </a>
             </li>
           </ul>
-        </div> -->
+        </div>
 
-    <!-- footer input -->
+        <!-- footer input -->
 
-    <!-- <div class="footer-input">
+        <div class="footer-input">
           <p class="footer-input__title">Подпишитесь на рассылку</p>
           <form class="footer-input__form">
             <label
@@ -644,7 +665,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
