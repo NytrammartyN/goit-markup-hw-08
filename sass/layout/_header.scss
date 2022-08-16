@@ -248,6 +248,7 @@
 .mob-menu-list__social {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   column-gap: 20px;
 }

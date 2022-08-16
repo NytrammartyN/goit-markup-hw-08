@@ -23,7 +23,10 @@
 }
 
 .project-list__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
 
     &:hover,
     &:focus {
@@ -55,7 +58,7 @@
     top: 0;
     left: 0;
     background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform var(--trancition-timing);
 }
 
@@ -73,6 +76,7 @@
     border: 1px solid #eeeeee;
     border-top: none;
     padding: 20px 24px;
+    flex-grow: 1;
 }
 
 .project-list__title {

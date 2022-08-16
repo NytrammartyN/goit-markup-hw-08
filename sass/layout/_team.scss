@@ -40,9 +40,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  // @media screen and (max-width: 479px) {
-  //   width: 270px;
-  // }
+
+
+  @media screen and (max-width: 479px) {
+    width: 270px;
+  }
 
   @media screen and (min-width: 480px) {
     width: 450px;
@@ -54,6 +56,10 @@
 
   @media screen and (min-width: 1200px) {
     width: 270px;
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
+
   }
 
 }

@@ -9,6 +9,7 @@
   top: 0;
   transition: opacity var(--trancition-timing),
     visibility var(--trancition-timing);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -219,7 +220,7 @@ textarea {
     color: var(--hover-color);
   }
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 320px) {
     position: absolute;
     top: 18px;
     left: 21px;
