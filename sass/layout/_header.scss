@@ -1,7 +1,9 @@
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -272,6 +274,15 @@
     width: 1px;
     height: 22px;
     background-color: rgba(33, 33, 33, 0.2);
+  }
+}
+
+.separator {
+  @media (max-width: 407px) {
+    &:not(:first-child)::before {
+      content: "";
+      width: 0px;
+    }
   }
 
 }

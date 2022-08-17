@@ -16,6 +16,7 @@
   --credo-color: #e5e5e5;
   --hover-color: #188ce8;
   --social-link: #afb1b8;
+  --trancition-timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -32,7 +33,7 @@
   overflow: hidden;
 }
 
-.body {
+body {
   font-family: var(--main-font);
   letter-spacing: 0.03em;
   background-color: var(--main-background-color);
@@ -431,11 +432,16 @@ textarea:hover, textarea:focus {
 .header-logo {
   font-family: var(--secondary-fonts);
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.03em;
   line-height: 1.19;
   color: var(--accent-text-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    font-size: 26px;
+  }
 }
 
 .header-logo__accent {
@@ -467,8 +473,10 @@ textarea:hover, textarea:focus {
 }
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -769,6 +777,13 @@ textarea:hover, textarea:focus {
   width: 1px;
   height: 22px;
   background-color: rgba(33, 33, 33, 0.2);
+}
+
+@media (max-width: 407px) {
+  .separator:not(:first-child)::before {
+    content: "";
+    width: 0px;
+  }
 }
 
 .mob-menu.is-hidden {
@@ -1183,7 +1198,7 @@ textarea:hover, textarea:focus {
 .client__title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 }
@@ -1579,12 +1594,6 @@ textarea:hover, textarea:focus {
   .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-}
-@media screen and (max-width: 479px) {
-  .portfolio {
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
