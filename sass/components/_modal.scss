@@ -33,6 +33,7 @@
   transform: scale(1);
   transition: transform var(--trancition-timing);
 
+
   @media screen and (min-width: 480px) {
     width: 450px;
     min-height: 609px;
